@@ -1,10 +1,11 @@
 import React from "react";
 import "./JobsCard.css";
+import octocat from "../assets/octocat.png"
 const JobsCard = ({ type, logo, title, location, url }) => {
   return (
     <div className="Card">
       <div className="logo">
-        <img className="img-logo" src={logo} alt="Logo" />
+        <img className="img-logo" src={logo ?? octocat} alt="Logo" />
       </div>
     <div className="green-border">
       <div className="title">
